@@ -1,0 +1,209 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "编译并运行功能测试",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/test",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build test",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "logging": {
+                "engineLogging": true
+            },
+            "additionalSOLibSearchPath": "/usr/local/lib64",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "运行功能测试",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/test",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "/usr/bin/gdb",
+            "logging": {
+                "engineLogging": true
+            },
+            "additionalSOLibSearchPath": "/usr/local/lib64",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "编译并启动服务器",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/server",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build server",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "logging": {
+                "engineLogging": true
+            },
+            "additionalSOLibSearchPath": "/usr/local/lib64",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "启动服务器",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/server",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "/usr/bin/gdb",
+            "logging": {
+                "engineLogging": true
+            },
+            "additionalSOLibSearchPath": "/usr/local/lib64",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "编译并启动客户端",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/client",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build client",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "logging": {
+                "engineLogging": true
+            },
+            "additionalSOLibSearchPath": "/usr/local/lib64",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "启动客户端",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/client",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "/usr/bin/gdb",
+            "logging": {
+                "engineLogging": true
+            },
+            "additionalSOLibSearchPath": "/usr/local/lib64",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "编译并启动服务器和客户端",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/server",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build server and client",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "logging": {
+                "engineLogging": true
+            },
+            "additionalSOLibSearchPath": "/usr/local/lib64",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "启动服务器和客户端",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/server",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "/usr/bin/gdb",
+            "logging": {
+                "engineLogging": true
+            },
+            "additionalSOLibSearchPath": "/usr/local/lib64",
+            "internalConsoleOptions": "openOnSessionStart"
+        }
+    ]
+}

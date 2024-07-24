@@ -1,0 +1,63 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build test",
+            "type": "shell",
+            "command": "make test",
+            "args": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Generated task by debugging configuration."
+        },
+        {
+            "label": "build server",
+            "type": "shell",
+            "command": "make server",
+            "args": [],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "build client",
+            "type": "shell",
+            "command": "make client",
+            "args": [],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "build server and client",
+            "type": "shell",
+            "command": "make server client",
+            "args": [],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "gen_parser",
+            "type": "shell",
+            "command": "cd utils/Parser/ && ./gen_parser.sh"
+        }
+    ]
+}
